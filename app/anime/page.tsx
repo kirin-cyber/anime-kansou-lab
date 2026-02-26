@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AnimePage() {
-  const genres = [...new Set(animeList.flatMap((a) => a.info.genre))];
+  const genres = Array.from(new Set(animeList.flatMap((a) => a.info.genre)));
 
   // Jikan APIから全アニメの画像URLを並列取得
   const imageUrls = await Promise.all(
