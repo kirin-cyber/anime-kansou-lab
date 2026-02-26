@@ -32,7 +32,7 @@ export const animeList: Anime[] = [
     title: 'Steins;Gate',
     titleJa: 'シュタインズ・ゲート',
     tagline: '時間を超えた愛と後悔の物語',
-    image: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80',
+    image: 'https://cdn.myanimelist.net/images/anime/1935/127974l.jpg',
     synopsis:
       '発明家を自称する大学生・岡部倫太郎は、秋葉原のラボで"未来ガジェット"の開発に明け暮れていた。ある日、偶然から電話レンジ（仮）がタイムマシンとして機能することを発見。過去へのメッセージ送信（Dメール）を繰り返すうちに、世界線が変動し、仲間たちの命を巻き込んだ壮絶な運命が幕を開ける。科学アドベンチャーゲームを原作とする、SF・タイムトラベル・青春が交差する傑作アニメ。',
     review:
@@ -70,7 +70,7 @@ export const animeList: Anime[] = [
     title: 'Re:ゼロから始める異世界生活',
     titleJa: 'リゼロ',
     tagline: '死に戻りを繰り返す少年の、絶望と希望のダークファンタジー',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80',
+    image: 'https://cdn.myanimelist.net/images/anime/1522/128039l.jpg',
     synopsis:
       'コンビニからの帰り道、突然異世界に召喚されたナツキ・スバル。彼が持つ唯一の能力「死に戻り」—死ぬたびにある地点まで時間が巻き戻る。最愛の人を守るため、何度も残酷な死を繰り返しながら前進し続ける、重厚なダークファンタジー。ライトノベル原作で、TVシリーズ第1期・第2期が放送済み。',
     review:
@@ -106,7 +106,7 @@ export const animeList: Anime[] = [
     title: 'ソードアート・オンライン',
     titleJa: 'ソードアート・オンライン',
     tagline: 'VRゲームに閉じ込められた少年の、命を賭けた冒険',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80',
+    image: 'https://cdn.myanimelist.net/images/anime/11/39717l.jpg',
     synopsis:
       '2022年、完全没入型VRMMOゲーム「ソードアート・オンライン」にログインした1万人のプレイヤーは、ゲームをクリアするまで現実世界に戻れないことを告げられる。ゲーム内で死ぬと現実でも死ぬ——。最前線で戦うキリトと出会う人々、そしてアスナとの絆を軸に描く、壮大なVRファンタジー。',
     review:
@@ -142,7 +142,7 @@ export const animeList: Anime[] = [
     title: 'Fate/Zero',
     titleJa: 'フェイト/ゼロ',
     tagline: '聖杯戦争——最強の英霊たちが激突する、ダークファンタジーの最高峰',
-    image: 'https://images.unsplash.com/photo-1604076913837-52ab5629fde9?w=800&q=80',
+    image: 'https://cdn.myanimelist.net/images/anime/1887/117644l.jpg',
     synopsis:
       '7人の魔術師（マスター）が7騎の英霊（サーヴァント）を呼び出し、あらゆる願いを叶えるとされる「聖杯」を賭けて戦う「聖杯戦争」。冬木市を舞台に、衛宮切嗣・遠坂時臣・ケイネス・エルメロイ・アーチボルトらが繰り広げる第四次聖杯戦争の物語。Fate/stay nightの前日譚にあたる虚淵玄原作の傑作。',
     review:
@@ -180,7 +180,7 @@ export const animeList: Anime[] = [
     title: 'ダンジョンに出会いを求めるのは間違っているだろうか',
     titleJa: 'ダンまち',
     tagline: '迷宮都市オラリオで夢を追う少年と、女神の絆を描くファンタジー',
-    image: 'https://images.unsplash.com/photo-1604076913837-52ab5629fde9?w=800&q=80',
+    image: 'https://cdn.myanimelist.net/images/anime/1172/148981l.webp',
     synopsis:
       '迷宮都市オラリオ。地下迷宮（ダンジョン）に潜り強さを求める冒険者たちが集う街で、弱小ファミリアに所属する少年・ベル・クラネルは憧れの剣士アイズ・ヴァレンシュタインと出会い、強くなることを誓う。美の女神ヘスティアの庇護のもと、ベルが仲間とともに成長していく王道ファンタジー。ライトノベル原作で、複数シリーズが制作されている人気作。',
     review:
