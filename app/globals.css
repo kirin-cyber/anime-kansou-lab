@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: 'Syne', sans-serif;
+  --font-noto: 'Noto Sans JP', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #060a14;
+  color: #e8f0ff;
+  font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #060a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #00d4ff44;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff88;
+}
+
+/* Utility classes */
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px #00d4ff66, 0 0 40px #00d4ff33;
+}
+
+.glow-text-pink {
+  text-shadow: 0 0 20px #ff3cac66, 0 0 40px #ff3cac33;
+}
+
+.card-glow {
+  box-shadow: 0 0 30px #00d4ff11, inset 0 1px 0 #00d4ff22;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 50px #00d4ff22, inset 0 1px 0 #00d4ff44;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(#00d4ff08 1px, transparent 1px),
+    linear-gradient(90deg, #00d4ff08 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.scan-line {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #00d4ff04 50%,
+    transparent 100%
+  );
+  animation: scanLine 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanLine {
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Star rating */
+.star-filled {
+  color: #fbbf24;
+  filter: drop-shadow(0 0 6px #fbbf2488);
+}
+.star-empty {
+  color: #1a2540;
+}
+
+/* Tag styles */
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tag-cyan {
+  color: #00d4ff;
+  border-color: #00d4ff44;
+  background: #00d4ff0a;
+}
+
+.tag-pink {
+  color: #ff3cac;
+  border-color: #ff3cac44;
+  background: #ff3cac0a;
+}
+
+.tag-purple {
+  color: #7b5cf0;
+  border-color: #7b5cf044;
+  background: #7b5cf00a;
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Animate in */
+.animate-in {
+  animation: fadeSlideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff 0%, #7b5cf0 50%, #ff3cac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Horizontal rule */
+.hr-glow {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00d4ff44, transparent);
+}
+
+/* Ad placeholder */
+.ad-placeholder {
+  border: 1px dashed #1a2540;
+  background: #0d1424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a5872;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
