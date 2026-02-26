@@ -273,7 +273,7 @@ export const siteConfig = {
   tagline: '名作アニメの感想と考察',
   description:
     '日本アニメの感想・レビュー・ランキング・考察を掲載する個人サイト。2000〜2020年代の名作を中心に、深掘りレビューをお届けします。',
-  url: 'https://anime-kansou-lab.vercel.app',
+  url: 'https://anime-kansou-lab-xxoo.vercel.app',
   author: 'アニメ感想ラボ編集部',
   twitter: '@AnimeKansouLab',
 };
